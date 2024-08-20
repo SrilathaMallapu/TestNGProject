@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-20T16:53:43 IST" name="Default suite" finished-at="2024-08-20T16:54:35 IST" duration-ms="52534">
+    <groups>
+    </groups>
+    <test started-at="2024-08-20T16:53:43 IST" name="Default test" finished-at="2024-08-20T16:54:35 IST" duration-ms="52534">
+      <class name="com.Tutorials.TestCases.SearchTest">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:53:43 IST" name="LaunchBrowser" finished-at="2024-08-20T16:53:49 IST" duration-ms="6352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="SearchwithExistingProduct()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:53:49 IST" name="SearchwithExistingProduct" finished-at="2024-08-20T16:53:50 IST" duration-ms="898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchwithExistingProduct -->
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:53:50 IST" name="Closebrowser" finished-at="2024-08-20T16:53:50 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:53:50 IST" name="LaunchBrowser" finished-at="2024-08-20T16:53:55 IST" duration-ms="4678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="searchwithNonExisitngProduct()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:53:55 IST" name="searchwithNonExisitngProduct" finished-at="2024-08-20T16:53:56 IST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchwithNonExisitngProduct -->
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:53:56 IST" name="Closebrowser" finished-at="2024-08-20T16:53:56 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:53:56 IST" name="LaunchBrowser" finished-at="2024-08-20T16:54:01 IST" duration-ms="5020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="searchwithNoproduct()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:54:01 IST" name="searchwithNoproduct" finished-at="2024-08-20T16:54:02 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchwithNoproduct -->
+        <test-method is-config="true" signature="Closebrowser()[pri:0, instance:com.Tutorials.TestCases.SearchTest@4116aac9]" started-at="2024-08-20T16:54:02 IST" name="Closebrowser" finished-at="2024-08-20T16:54:02 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+      </class> <!-- com.Tutorials.TestCases.SearchTest -->
+      <class name="com.Tutorials.TestCases.RegisterTest">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:02 IST" name="LaunchBrowser" finished-at="2024-08-20T16:54:08 IST" duration-ms="5796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="RegisterInvalidCredentials()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:08 IST" name="RegisterInvalidCredentials" finished-at="2024-08-20T16:54:08 IST" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterInvalidCredentials -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:08 IST" name="CloseBrowser" finished-at="2024-08-20T16:54:08 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:08 IST" name="LaunchBrowser" finished-at="2024-08-20T16:54:13 IST" duration-ms="5120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="RegisterInvalidPassword()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:13 IST" name="RegisterInvalidPassword" finished-at="2024-08-20T16:54:15 IST" duration-ms="1281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterInvalidPassword -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:15 IST" name="CloseBrowser" finished-at="2024-08-20T16:54:15 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:15 IST" name="LaunchBrowser" finished-at="2024-08-20T16:54:21 IST" duration-ms="5807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="RegisterWithExistedCredentials()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:21 IST" name="RegisterWithExistedCredentials" finished-at="2024-08-20T16:54:22 IST" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterWithExistedCredentials -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.Tutorials.TestCases.RegisterTest@7c9d8e2]" started-at="2024-08-20T16:54:22 IST" name="CloseBrowser" finished-at="2024-08-20T16:54:22 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.Tutorials.TestCases.RegisterTest -->
+      <class name="com.Tutorials.TestCases.LoginTest">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.LoginTest@20d525]" started-at="2024-08-20T16:54:22 IST" name="LaunchBrowser" finished-at="2024-08-20T16:54:28 IST" duration-ms="5137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="InValidatecredential()[pri:0, instance:com.Tutorials.TestCases.LoginTest@20d525]" started-at="2024-08-20T16:54:28 IST" name="InValidatecredential" finished-at="2024-08-20T16:54:28 IST" duration-ms="873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidatecredential -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.Tutorials.TestCases.LoginTest@20d525]" started-at="2024-08-20T16:54:28 IST" name="CloseBrowser" finished-at="2024-08-20T16:54:29 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.LoginTest@20d525]" started-at="2024-08-20T16:54:29 IST" name="LaunchBrowser" finished-at="2024-08-20T16:54:34 IST" duration-ms="5491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Validatecredential()[pri:0, instance:com.Tutorials.TestCases.LoginTest@20d525]" started-at="2024-08-20T16:54:34 IST" name="Validatecredential" finished-at="2024-08-20T16:54:35 IST" duration-ms="1058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatecredential -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.Tutorials.TestCases.LoginTest@20d525]" started-at="2024-08-20T16:54:35 IST" name="CloseBrowser" finished-at="2024-08-20T16:54:35 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- com.Tutorials.TestCases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
