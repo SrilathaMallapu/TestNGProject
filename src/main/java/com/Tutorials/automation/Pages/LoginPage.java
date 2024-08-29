@@ -28,6 +28,8 @@ public class LoginPage {
 	private WebElement Success;
 	@FindBy(xpath="//div[contains(@class,'alert-dismissible')]")
 	private WebElement Error;
+	@FindBy(linkText="Forgotten Password")
+	private WebElement Forgot;
 	
 	public void Enterdetails(String email,String Pass)
 	{
@@ -49,4 +51,9 @@ public class LoginPage {
 		String WarningMessage= Error.getText();
 		return WarningMessage;
 	}
+	public void Forgotclick()
+	{
+		Forgot.click();
+	}
+	
 }

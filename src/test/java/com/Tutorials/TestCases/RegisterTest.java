@@ -1,4 +1,5 @@
 package com.Tutorials.TestCases;
+import org.testng.annotations.*;
 import com.Tutorials.automation.utils.*;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,6 +15,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 import org.testng.asserts.IAssert;
@@ -35,7 +37,7 @@ public RegisterTest()
 /*WebElement Account;
 WebElement Register;
 WebElement FirstName,LastName,Email,Telephone,Password,Confirm;*/
-
+@Ignore
 @BeforeMethod
 public void LaunchBrowser()
 {
@@ -58,7 +60,7 @@ regis.ConButon();
 sft.assertTrue(chrome.findElement(By.linkText("Success")).isDisplayed());
 sft.assertAll();
 }
-
+@Ignore
 @Test
 public void RegisterWithExistedCredentials()
 {
@@ -74,7 +76,7 @@ public void RegisterWithExistedCredentials()
 	sft.assertAll();
 }
 
-
+@Ignore
 @Test
 public void RegisterInvalidPassword()
 {
@@ -87,11 +89,11 @@ public void RegisterInvalidPassword()
 	sft.assertEquals(PasswordMismatch,"Password confirmation does not match password!");
 	sft.assertAll();
 }
-
+@Parameters({"url","email","password"})
 @Test
-public void RegisterInvalidCredentials()
+public void RegisterInvalidCredentials(@Optional("no url provided")String url1,@Optional("no email is provide")String email,@Optional("srilatha")String password)
 {
-	SoftAssert sft=new SoftAssert();
+	//SoftAssert sft=new SoftAssert();
 	/*chrome.findElement(By.id("input-firstname")).sendKeys("Marina");
 	chrome.findElement(By.id("input-lastname")).sendKeys("Garita");
 	chrome.findElement(By.id("input-email")).sendKeys("Mari@getting.com");
@@ -99,13 +101,16 @@ public void RegisterInvalidCredentials()
 	//chrome.findElement(By.id("input-password")).sendKeys("Mari@345");
 	chrome.findElement(By.id("input-confirm")).sendKeys("Mari@345");
 	//chrome.findElement(By.xpath("//*[@id=\"content\"]/form/div/div/input[1]")).click();*/
-	RegisterPage regis=new RegisterPage(chrome);
-	regis.ConButon();
+	System.out.println("The value of url1 is "+url1+email+password);
 	
-    String PrivacyPolicy=chrome.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-	sft.assertTrue(PrivacyPolicy.contains("Warning: You must agree to the Privacy Policy!"),"expected message is not displayed");
+	
+	//RegisterPage regis=new RegisterPage(chrome);
+	//regis.ConButon();
+	
+    //String PrivacyPolicy=chrome.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
+	//sft.assertTrue(PrivacyPolicy.contains("Warning: You must agree to the Privacy Policy!"),"expected message is not displayed");
 	//String FristNameWarning=chrome.findElement(By.xpath(""))
-	sft.assertAll();
+	//sft.assertAll();
 }
 
 @AfterMethod

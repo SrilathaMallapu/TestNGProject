@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tutorials.TestCases.Register">
+      <class name="com.Tutorials.TestCases.RegisterTest">
         <methods>
           <include name="LaunchBrowser"/>
-          <include name="RegisterValidCredentials"/>
           <include name="CloseBrowser"/>
+          <include name="RegisterInvalidCredentials"/>
         </methods>
-      </class> <!-- com.Tutorials.TestCases.Register -->
+      </class> <!-- com.Tutorials.TestCases.RegisterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
