@@ -2,6 +2,7 @@ package com.Tutorials.automation.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -30,9 +31,20 @@ public class LoginPage {
 	private WebElement Error;
 	@FindBy(linkText="Forgotten Password")
 	private WebElement Forgot;
-	
+	@FindBy(linkText="Logout")
+	private WebElement Logout;
+	@FindBy(linkText="My Account")
+	private WebElement MyAccount;
+	@FindBy(linkText="Login")
+	private WebElement Loginlink;
+	@FindBy(linkText="Continue")
+	private WebElement ContinueButton;
+	@FindBy(xpath="//div[@class=\"list-group\"]/a[13]")
+	private WebElement LogoutRight;
+
 	public void Enterdetails(String email,String Pass)
 	{
+		
 		EmailAddress.sendKeys(email);
 		Password.sendKeys(Pass);
 	}
@@ -41,6 +53,7 @@ public class LoginPage {
 	{
 		LoginButton.click();
 	}
+		
 	public boolean Displayed()
 	{
 		Boolean value=Success.isDisplayed();
@@ -54,6 +67,32 @@ public class LoginPage {
 	public void Forgotclick()
 	{
 		Forgot.click();
+	}
+	public boolean LogoutDisplay()
+	{
+		MyAccount.click();
+		return Logout.isDisplayed();
+	}
+	public void logoutclick(String option)
+	{
+		Actions act=new Actions(driver);
+		if(option.equals("Button"))
+		{
+		Logout.click();
+		}
+		else if(option.equals("Righthand"))
+		{
+			act.moveToElement(LogoutRight).click().build().perform();
+		}
+	}
+	public boolean ValidateLogout()
+	{
+		MyAccount.click();
+		return Loginlink.isDisplayed();
+	}
+	public void continueclick()
+	{
+		ContinueButton.click();
 	}
 	
 }

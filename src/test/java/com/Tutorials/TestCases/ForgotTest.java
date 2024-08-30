@@ -12,7 +12,7 @@ import com.Tutorials.automation.Pages.ForgotPage;
 import com.Tutorials.automation.Pages.HomePage;
 import com.Tutorials.automation.Pages.LoginPage;
 
-@Ignore
+
 public class ForgotTest extends Base{
 
 	WebDriver driver;
@@ -40,8 +40,9 @@ public class ForgotTest extends Base{
 		form.contin();
 		String fail=form.faildata();
 		//Assert.assertTrue(Success.contains("An email with a confirmation link has been sent your email address"));
-			Assert.assertTrue(fail.contains("The E-Mail Address was not found in our records, please try again!"));	
+			Assert.assertTrue(fail.contains(prop.getProperty("EmailNotfound")));	
 	}
+	
 	@Test
 	public void TestwithInvalidCredentails()
 	{
@@ -49,7 +50,7 @@ public class ForgotTest extends Base{
 		form.inputdata("Hasni@gmail.com");
 		form.contin();
 		String success=form.getdata();
-		Assert.assertTrue(success.contains("An email with a confirmation link has been sent your email address."));
+		Assert.assertTrue(success.contains(prop.getProperty("SuccessMessage")));
 	}
 	
 	@AfterMethod

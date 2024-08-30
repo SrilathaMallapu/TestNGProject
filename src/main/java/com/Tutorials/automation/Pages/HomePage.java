@@ -22,6 +22,9 @@ private WebElement LoginOption;
 @FindBy(linkText="Register")
 private WebElement RegisterOption;
 
+@FindBy(linkText="Qafox.com")
+private WebElement Home;
+
 //Actions 
 
 public void MyAccountAction()
@@ -36,5 +39,9 @@ public void LoginOptionAction()
 public void RegisterOptionAction()
 {
 	RegisterOption.click();
+}
+public boolean homeDisplay()
+{
+	return Home.isDisplayed();
 }
 }
