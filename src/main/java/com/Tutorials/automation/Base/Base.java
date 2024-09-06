@@ -1,10 +1,12 @@
 package com.Tutorials.automation.Base;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.File;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +21,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 
-	WebDriver driver;
+	public static WebDriver driver;
+	public WaitStatements wait=new WaitStatements();
 	public Properties prop; 
 	public Base()
 	{
@@ -43,6 +46,8 @@ public class Base {
 		{
 
 			driver = new ChromeDriver();
+			wait.implicity_wait(driver, 20);
+			
 		}
 	     else if(browser.equals("Edge"))
 	    	
@@ -60,6 +65,17 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		return driver;
 	
+	}
+	public static void takescreenshot(String methodname)
+	{
+		File srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String destination=System.getProperty("user.dir")+".\\screenshot"+methodname+".png";
+		try {
+			FileUtils.copyFile(srcfile,new File(destination));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
 		

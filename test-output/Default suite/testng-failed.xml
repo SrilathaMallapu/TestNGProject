@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Tutorials.TestCases.ForgotTest">
+      <class name="com.Tutorials.TestCases.ChangePassword">
         <methods>
-          <include name="launchBrowser"/>
+          <include name="ValidateChangePassword"/>
+          <include name="LaunchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="TestwithInvalidCredentails"/>
         </methods>
-      </class> <!-- com.Tutorials.TestCases.ForgotTest -->
+      </class> <!-- com.Tutorials.TestCases.ChangePassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

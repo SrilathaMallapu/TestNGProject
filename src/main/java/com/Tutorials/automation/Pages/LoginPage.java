@@ -42,11 +42,11 @@ public class LoginPage {
 	@FindBy(xpath="//div[@class=\"list-group\"]/a[13]")
 	private WebElement LogoutRight;
 
-	public void Enterdetails(String email,String Pass)
+	public void Enterdetails(String str,String str2)
 	{
 		
-		EmailAddress.sendKeys(email);
-		Password.sendKeys(Pass);
+		EmailAddress.sendKeys(str);
+		Password.sendKeys(str2);
 	}
 	
 	public void ClickonLogin()

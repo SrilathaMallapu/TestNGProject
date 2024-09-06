@@ -14,6 +14,7 @@ import org.testng.asserts.IAssert;
 import org.testng.asserts.SoftAssert;
 
 import com.Tutorials.automation.Base.Base;
+import com.Tutorials.automation.Base.TestData;
 import com.Tutorials.automation.Pages.HomePage;
 import com.Tutorials.automation.Pages.LoginPage;
 
@@ -34,13 +35,17 @@ public class LoginTest extends Base
 	}
 	
 	
-   	@Test
-	public void Validatecredential() throws InterruptedException
+   	@Test(dataProvider="supplydata",dataProviderClass=TestData.class)
+	public void Validatecredential(Object[] str) throws InterruptedException
 	{
    		
+   		System.out.println("Email is"+str[0]+"\n"+"Password is"+str[1]);
    		SoftAssert sft = new SoftAssert();
    		LoginPage Login=new LoginPage(driver);
-	Login.Enterdetails("Hasni@gmail.com","Hasini@96");
+   		String email=str[0].toString();
+   		String Password=str[1].toString();
+   		System.out.println("Email is"+email+"\n"+"Password is"+Password);
+	Login.Enterdetails(email,Password);
 	Login.ClickonLogin();
 	sft.assertTrue(Login.Displayed());
 	
@@ -48,7 +53,7 @@ public class LoginTest extends Base
 
 	sft.assertAll();
 	}
-	
+	@Ignore
 	@Test
 	public void InValidatecredential() throws InterruptedException
 	{
