@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Haritha\AppData\Local\Temp\testng-eclipse-1531351166\testng-customsuite.xml</span>
+                    <span>C:\Users\Haritha\AppData\Local\Temp\testng-eclipse--373374043\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Tutorials.TestCases.ForgotTest" class="method navigator-link" hash-for-method="TestwithInvalidCredentails">TestwithInvalidCredentails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tutorials.TestCases.ChangePassword" class="method navigator-link" hash-for-method="ValidateChangePassword">ValidateChangePassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,7 +117,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.Tutorials.TestCases.ForgotTest" class="method navigator-link" hash-for-method="TestwithvalidCredentials">TestwithvalidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.Tutorials.TestCases.ChangePassword" class="method navigator-link" hash-for-method="ValidateConfirmPasswordField">ValidateConfirmPasswordField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -135,20 +135,38 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.Tutorials.TestCases.ForgotTest</span>
+              <span class="class-name">com.Tutorials.TestCases.ChangePassword</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestwithInvalidCredentails">
-                  </a> <!-- TestwithInvalidCredentails -->
-                  <span class="method-name">TestwithInvalidCredentails</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.Tutorials.TestCases.ForgotTest.TestwithInvalidCredentails(ForgotTest.java:53)
+                  <a name="ValidateChangePassword">
+                  </a> <!-- ValidateChangePassword -->
+                  <span class="method-name">ValidateChangePassword</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;content&quot;]/form/div/div[2]/input&quot;}
+  (Session info: chrome=128.0.6613.113)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [838441fb9b348264642d14dce7ff0884, findElement {using=xpath, value=//*[@id=&quot;content&quot;]/form/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Haritha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53414/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 838441fb9b348264642d14dce7ff0884
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at com.Tutorials.TestCases.ChangePassword.ValidateChangePassword(ChangePassword.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -184,14 +202,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.Tutorials.TestCases.ForgotTest</span>
+              <span class="class-name">com.Tutorials.TestCases.ChangePassword</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestwithvalidCredentials">
-                  </a> <!-- TestwithvalidCredentials -->
-                  <span class="method-name">TestwithvalidCredentials</span>
+                  <a name="ValidateConfirmPasswordField">
+                  </a> <!-- ValidateConfirmPasswordField -->
+                  <span class="method-name">ValidateConfirmPasswordField</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,7 +217,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Haritha\AppData\Local\Temp\testng-eclipse-1531351166\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Haritha\AppData\Local\Temp\testng-eclipse--373374043\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,7 +226,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Tutorials.TestCases.ForgotTest&quot;/&gt;
+      &lt;class name=&quot;com.Tutorials.TestCases.ChangePassword&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -250,18 +268,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestwithInvalidCredentails')
-data.setCell(0, 2, 'com.Tutorials.TestCases.ForgotTest')
-data.setCell(0, 3, 1353);
+data.setCell(0, 1, 'ValidateChangePassword')
+data.setCell(0, 2, 'com.Tutorials.TestCases.ChangePassword')
+data.setCell(0, 3, 31667);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TestwithvalidCredentials')
-data.setCell(1, 2, 'com.Tutorials.TestCases.ForgotTest')
-data.setCell(1, 3, 1024);
+data.setCell(1, 1, 'ValidateConfirmPasswordField')
+data.setCell(1, 2, 'com.Tutorials.TestCases.ChangePassword')
+data.setCell(1, 3, 3);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -287,32 +305,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.Tutorials.TestCases.ForgotTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Tutorials.TestCases.ChangePassword</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
+                <span class="method-name">LaunchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TestwithInvalidCredentails</span>
-                <span class="method-start">9268 ms</span>
+                <span class="method-name">ValidateChangePassword</span>
+                <span class="method-start">6206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">10627 ms</span>
+                <span class="method-start">37881 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchBrowser</span>
-                <span class="method-start">10979 ms</span>
+                <span class="method-name">LaunchBrowser</span>
+                <span class="method-start">38278 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TestwithvalidCredentials</span>
-                <span class="method-start">17687 ms</span>
+                <span class="method-name">ValidateConfirmPasswordField</span>
+                <span class="method-start">47556 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">18713 ms</span>
+                <span class="method-start">47559 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

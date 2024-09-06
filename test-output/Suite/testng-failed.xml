@@ -3,15 +3,18 @@
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="url" value="https://tutorialsninja.com/demo/"/>
   <parameter name="email" value="hasni@gmail.com"/>
+  <listeners>
+    <listener class-name="com.Tutorials.automation.listeners.MyListeners"/>
+  </listeners>
   <test thread-count="5" parallel="tests" name="Register(failed)">
     <classes>
-      <class name="com.Tutorials.TestCases.RegisterTest">
+      <class name="com.Tutorials.TestCases.ForgotTest">
         <methods>
-          <include name="LaunchBrowser"/>
-          <include name="CloseBrowser"/>
-          <include name="RegisterInvalidCredentials"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="TestwithInvalidCredentails"/>
         </methods>
-      </class> <!-- com.Tutorials.TestCases.RegisterTest -->
+      </class> <!-- com.Tutorials.TestCases.ForgotTest -->
     </classes>
   </test> <!-- Register(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -8,13 +8,15 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Ignore;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.Tutorials.automation.Base.Base;
 import com.Tutorials.automation.Pages.HomePage;
 import com.Tutorials.automation.Pages.LoginPage;
-
+import com.Tutorials.automation.listeners.MyListeners;
+@Listeners(MyListeners.class)
 public class LogoutTest extends Base {
 
 	WebDriver driver;
@@ -36,14 +38,14 @@ public LogoutTest()
 		Login.Enterdetails("Hasni@gmail.com", "Hasini@96");
 	    Login.ClickonLogin();
 	}
-	@Ignore
+	
 	@Test
 	public void ValidateLogoutOption()
 	{
 		LoginPage Login=new LoginPage(driver);
 		Assert.assertTrue(Login.LogoutDisplay());
 	}
-	@Ignore
+	
 	@Test
 	public void validateLogoutOption()
 	{
@@ -51,6 +53,7 @@ public LogoutTest()
 		Login.logoutclick("Button");
 		Assert.assertTrue(Login.ValidateLogout());
 	}
+	@Ignore
 	@Test
 	public void validateHomePage()
 	{
@@ -68,12 +71,11 @@ public LogoutTest()
 		sft.assertTrue(Login.LogoutDisplay());
 		sft.assertAll();
 	}
-	
 	@AfterMethod
-	public void CloseBrowser()
+	public void closebrowser()
 	{
-		driver.get("");
 		driver.quit();
 	}
+	
 	
 }

@@ -2,27 +2,53 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-30T15:16:33 IST" name="Default suite" finished-at="2024-08-30T15:16:52 IST" duration-ms="19133">
+  <suite started-at="2024-09-03T10:03:11 IST" name="Default suite" finished-at="2024-09-03T10:03:59 IST" duration-ms="47924">
     <groups>
     </groups>
-    <test started-at="2024-08-30T15:16:33 IST" name="Default test" finished-at="2024-08-30T15:16:52 IST" duration-ms="19133">
-      <class name="com.Tutorials.TestCases.ForgotTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Tutorials.TestCases.ForgotTest@4218d6a3]" started-at="2024-08-30T15:16:33 IST" name="launchBrowser" finished-at="2024-08-30T15:16:43 IST" duration-ms="9265" status="PASS">
+    <test started-at="2024-09-03T10:03:11 IST" name="Default test" finished-at="2024-09-03T10:03:59 IST" duration-ms="47924">
+      <class name="com.Tutorials.TestCases.ChangePassword">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.ChangePassword@292b08d6]" started-at="2024-09-03T10:03:11 IST" name="LaunchBrowser" finished-at="2024-09-03T10:03:18 IST" duration-ms="6205" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="TestwithInvalidCredentails()[pri:0, instance:com.Tutorials.TestCases.ForgotTest@4218d6a3]" started-at="2024-08-30T15:16:43 IST" name="TestwithInvalidCredentails" finished-at="2024-08-30T15:16:44 IST" duration-ms="1353" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ValidateChangePassword()[pri:0, instance:com.Tutorials.TestCases.ChangePassword@292b08d6]" started-at="2024-09-03T10:03:18 IST" name="ValidateChangePassword" finished-at="2024-09-03T10:03:49 IST" duration-ms="31667" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="content"]/form/div/div[2]/input"}
+  (Session info: chrome=128.0.6613.113)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [838441fb9b348264642d14dce7ff0884, findElement {using=xpath, value=//*[@id="content"]/form/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Haritha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53414/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 838441fb9b348264642d14dce7ff0884]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.Tutorials.TestCases.ForgotTest.TestwithInvalidCredentails(ForgotTest.java:53)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="content"]/form/div/div[2]/input"}
+  (Session info: chrome=128.0.6613.113)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [838441fb9b348264642d14dce7ff0884, findElement {using=xpath, value=//*[@id="content"]/form/div/div[2]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.113, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\Haritha\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53414/devtoo..., se:cdpVersion: 128.0.6613.113, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 838441fb9b348264642d14dce7ff0884
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+at com.Tutorials.TestCases.ChangePassword.ValidateChangePassword(ChangePassword.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -51,27 +77,27 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestwithInvalidCredentails -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Tutorials.TestCases.ForgotTest@4218d6a3]" started-at="2024-08-30T15:16:44 IST" name="closeBrowser" finished-at="2024-08-30T15:16:44 IST" duration-ms="350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.Tutorials.TestCases.ForgotTest@4218d6a3]" started-at="2024-08-30T15:16:44 IST" name="launchBrowser" finished-at="2024-08-30T15:16:51 IST" duration-ms="6708" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="TestwithvalidCredentials()[pri:0, instance:com.Tutorials.TestCases.ForgotTest@4218d6a3]" started-at="2024-08-30T15:16:51 IST" name="TestwithvalidCredentials" finished-at="2024-08-30T15:16:52 IST" duration-ms="1024" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestwithvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Tutorials.TestCases.ForgotTest@4218d6a3]" started-at="2024-08-30T15:16:52 IST" name="closeBrowser" finished-at="2024-08-30T15:16:52 IST" duration-ms="332" status="PASS">
+        </test-method> <!-- ValidateChangePassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Tutorials.TestCases.ChangePassword@292b08d6]" started-at="2024-09-03T10:03:49 IST" name="closeBrowser" finished-at="2024-09-03T10:03:50 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.Tutorials.TestCases.ForgotTest -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:com.Tutorials.TestCases.ChangePassword@292b08d6]" started-at="2024-09-03T10:03:50 IST" name="LaunchBrowser" finished-at="2024-09-03T10:03:59 IST" duration-ms="9277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ValidateConfirmPasswordField()[pri:0, instance:com.Tutorials.TestCases.ChangePassword@292b08d6]" started-at="2024-09-03T10:03:59 IST" name="ValidateConfirmPasswordField" finished-at="2024-09-03T10:03:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateConfirmPasswordField -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.Tutorials.TestCases.ChangePassword@292b08d6]" started-at="2024-09-03T10:03:59 IST" name="closeBrowser" finished-at="2024-09-03T10:03:59 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.Tutorials.TestCases.ChangePassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
