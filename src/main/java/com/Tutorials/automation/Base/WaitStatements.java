@@ -15,7 +15,7 @@ public class WaitStatements {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
 		
 	}
-	#this is changes are not supported
+	
 	public void Explicitwait(WebDriver driver,int timeout,WebElement ele)
 	{
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(timeout));
