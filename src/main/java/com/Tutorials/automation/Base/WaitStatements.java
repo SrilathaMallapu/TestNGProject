@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitStatements {
 
+	#This are changes need to be committed
 	public void implicity_wait(WebDriver driver,int timeout)
 	{
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
